@@ -1,0 +1,36 @@
+.card{
+    border-radius:0px 0px 50px 50px;
+    box-shadow: 0;
+    font-weight: 500;
+    transition:0.75s;
+    animation: 1.2s ease-in 0s 1 appear
+}
+
+.card:hover{
+    box-shadow: 10px 5px 50px #222;
+
+}
+
+.card:hover .activator{
+    opacity:0.75;
+}
+
+.card .card-title{
+    font-weight: 600;
+}
+
+.card .card-content .price , .card .card-content .price .material-icons{
+    font-size: 24px;
+}
+
+@keyframes appear {
+    0% {
+      opacity: 0;
+    }
+    50%{
+        opacity:0.75;
+    }
+    100% {
+      opacity: 1;
+    }
+  }

@@ -1,10 +1,13 @@
 import React from 'react'
+import ProductSection from './ProductsSection/ProductSection'
 
 const Shop = () => {
     return (
-        <div>
-            This is shop
-        </div>
+        <section id="shop">
+            
+    
+           <ProductSection/>
+        </section>
     )
 }
 
