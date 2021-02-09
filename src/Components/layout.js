@@ -1,10 +1,11 @@
 import React from 'react'
-import Header from './Header/Navigation'
+import Navigation from './Header/Navigation'
 
-const layout = () => {
+const layout = (props) => {
     return (
         <>
-            <Header></Header>
+            <Navigation/>
+            {props.children}
         </>
     )
 }
