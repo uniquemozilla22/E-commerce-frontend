@@ -12,12 +12,12 @@ const Carousel = () => {
                      <p className="title">The right choice for your style.  </p>
                      <p className="sub_content">Your style is the most expressive view of yourself Make your fashion never go out of style. Visit out store for more information.</p>
                      <div className ="visit-section">
-                     <div className="visit-link">
-                     <Link to ="/">Visit Site</Link>
-                    </div>
-                    <div className="visit-link">
-                     <Link to ="/">Visit Shop</Link>
-                    </div>
+                     <Link to ="/shop"><div className="visit-link">
+                     Visit Site
+                    </div></Link>
+                    <Link to ="/shop"><div className="visit-link">
+                     Visit Shop
+                    </div></Link>
                      </div>
                      
                      
@@ -28,12 +28,12 @@ const Carousel = () => {
                      <p className="title">The right choice for your style.  </p>
                      <p className="sub_content">Your style is the most expressive view of yourself Make your fashion never go out of style. Visit out store for more information.</p>
                      <div className ="visit-section">
-                     <div className="visit-link">
-                     <Link to ="/">Visit Site</Link>
-                    </div>
-                    <div className="visit-link">
-                     <Link to ="/">Visit Shop</Link>
-                    </div>
+                     <Link to ="/shop"><div className="visit-link">
+                     Visit Site
+                    </div></Link>
+                    <Link to ="/shop"><div className="visit-link">
+                     Visit Shop
+                    </div></Link>
                      </div>
                      
                      

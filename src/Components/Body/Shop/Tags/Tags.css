@@ -1,0 +1,21 @@
+.tags{
+    display: flex;
+    justify-content: space-around;
+    font-weight:600;
+}
+ .tags .chip span{
+    font-size:0.8rem  !important;
+}
+
+.tags .chip .close{
+    color:grey;
+    font-size:0.8rem  !important;
+    
+}
+
+.tags .chip{
+    background-color: transparent;
+    color:grey;
+    border:1px solid grey;
+    
+}

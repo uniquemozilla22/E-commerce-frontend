@@ -1,0 +1,7 @@
+.nav-content .tab .active {
+    background-color:rgba(238, 241, 241, 0.603)
+} 
+
+.nav-content .tab:hover{
+    background-color:rgba(238, 241, 241, 0.603)
+}

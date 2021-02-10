@@ -7,10 +7,14 @@
 }
 
 .card:hover{
-    box-shadow: 10px 5px 50px #222;
+    box-shadow: 5px 2px 100px rgb(114, 114, 114);
 
 }
+.card-image .activator{
+    border-radius:0px 0px 50px 50px;
+    transition:0.75;
 
+}
 .card:hover .activator{
     opacity:0.75;
 }

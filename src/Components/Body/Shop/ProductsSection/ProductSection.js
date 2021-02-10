@@ -13,6 +13,8 @@ const ProductSection = () => {
                     <ShopItems />
                     <ShopItems />
                     <ShopItems />
+                    <ShopItems />
+                    <ShopItems />
                 </div>
             </div>
         </>
