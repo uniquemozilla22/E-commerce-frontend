@@ -6,6 +6,17 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 In the project directory, you can run:
 
+### `npm install react-router-dom`
+
+This Project contains the React Router Package to give a multipage feeling in our SPA.
+
+
+### `npm install @materialize-css@next`
+
+This website is built on the aspects of the materilize by Google. The package can be installed using the above code in the terminal
+
+
+
 ### `npm start`
 
 Runs the app in the development mode.\
