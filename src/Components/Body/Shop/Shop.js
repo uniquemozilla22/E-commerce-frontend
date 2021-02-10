@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import SectionBar from '../../Header/NavigationItems/SectionBar'
 import ProductSection from './ProductsSection/ProductSection'
 import './Shop.css'
 import Tags from './Tags/Tags'
@@ -29,6 +30,8 @@ const Shop = () => {
 
 
     return (
+        <>
+        <SectionBar />
         <section id="shop">
             <div className="filter">
                 <div className ="container">
@@ -50,6 +53,7 @@ const Shop = () => {
     
            <ProductSection/>
         </section>
+        </>
     )
 }
 
