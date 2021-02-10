@@ -1,15 +1,24 @@
 import React, { useState } from 'react'
 import {Link} from 'react-router-dom'
 import './Product.css'
+import image1 from './pexels-photo-983564.jpeg'
+import image2 from '../../../Assets/f5a129faa7b246ba9fcda5234975e3d0.jpg'
 
 const Product = () => {
 
     let [quantity,setQuantity]=useState(9)
-    let [productPrice,setproductPrice]=useState(99)   
+    let [productPrice,setproductPrice]=useState(99)  
+    let [productImages,setProductImage]= useState([image1,image2,image1])
+    let [displayImage,setDisplayImage]=useState(productImages[0])
 
     const changePrice=()=>{
         setproductPrice(quantity.default*99)
     }
+
+    let imageGallery= productImages.map((keys,index)=>
+         <div onClick={()=>setDisplayImage(productImages[index])}><img  className="image col" src={productImages[index]} alt="Product Display " /></div>
+    )
+
 
 
     return (
@@ -44,10 +53,7 @@ const Product = () => {
 
                  <div className="image-gallery">
                      <div className="row">
-                     <img className="image col " src={"https://i.pinimg.com/originals/f5/a1/29/f5a129faa7b246ba9fcda5234975e3d0.jpg"} alt="Display Picture"/>
-                 <img className="image col " src={"https://i.pinimg.com/originals/f5/a1/29/f5a129faa7b246ba9fcda5234975e3d0.jpg"} alt="Display Picture"/>
-                 <img className="image col " src={"https://i.pinimg.com/originals/f5/a1/29/f5a129faa7b246ba9fcda5234975e3d0.jpg"} alt="Display Picture"/>
-
+                    {imageGallery}
                      </div>
                 
                  </div>
@@ -56,8 +62,9 @@ const Product = () => {
             </div>
         </div>
             <div className="col s6 xl6 m6 l6">
-                <div className="product_image-content">
-                <img className="product_img1" src={"https://i.pinimg.com/originals/f5/a1/29/f5a129faa7b246ba9fcda5234975e3d0.jpg"} alt="Display Picture"/>
+                <div className="product_image-content">\
+                <img className="product_img1" src={displayImage} alt="Product 1 shirt 1 Display"/>
+
                 </div>
             </div>
         </div>

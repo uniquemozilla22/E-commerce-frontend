@@ -61,7 +61,8 @@ form.value label{
 }
 
 .product_image-content img{
-    width:650px;
+    width:550px;
+    height:800px;
     box-shadow: 5px 10px 30px #222;
     border-radius:30px;
     position:absolute;
@@ -91,15 +92,14 @@ form.value label{
 }
 
 .image-gallery img.image {
-    width:200px;
-    height:250px;
+    width:150px;
+    height:200px;
     transition: 0.4s;
 }
 
 .image-gallery .image:hover {
     opacity:0.5;
     cursor:pointer;
-    margin-top:10px;
 }
 
 
