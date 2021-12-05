@@ -8,9 +8,6 @@ const Shop = () => {
     const [tagarray, settagarray] = useState(["shirt", "pants","price"])
     const [tag, setTag] = useState("")
 
-
-    let message = " "
-
     let tagSetter=(e)=>{
         let userTag = e.target.value;
         setTag(userTag)
@@ -19,19 +16,21 @@ const Shop = () => {
     let submitHandler =(e) =>{
         e.preventDefault();
         settagarray([...tagarray,tag])
+        setTag("")
     }
     
     let deleteTag =(index)=>{
         let newarray = tagarray;
         newarray.splice(index,1);
         settagarray(newarray)
-        console.log(newarray)
     }
+
+    let sectionLink = ["men","women","kids"]
 
 
     return (
         <>
-        <SectionBar />
+        <SectionBar tag = "shop" links ={sectionLink}/>
         <section id="shop">
             <div className="filter">
                 <div className ="container">
@@ -40,7 +39,7 @@ const Shop = () => {
                         <div class="col s12 center">
                             <div class="input-field">
                                         <i class="material-icons prefix">search</i>
-                                        <input type="text" id="autocomplete-input" onChange={(e)=>tagSetter(e)} class="autocomplete"/>
+                                        <input type="text" id="autocomplete-input" value ={tag}onChange={(e)=>tagSetter(e)} class="autocomplete"/>
                                         <label for="autocomplete-input">Search Shop</label>
                                         <button type="submit" onClick={(e)=>submitHandler(e)} style={{"display":'none'}}/>
                             </div>

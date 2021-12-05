@@ -1,13 +1,8 @@
 body{
-  font-family: "Montserrat",sans-serif;
-
+  font-family:"Poppins",sans-serif;
 }
 
 a{
-  color:black;
-
+  color:#222 ;
 }
 
-a:hover{
-  color:#c29392
-}

@@ -28,7 +28,7 @@ const Product = () => {
                  <p className="product_title">Product Shirt</p>
                  <p className="product_title">${productPrice}</p>
 
-                 <p className="product_sub_content">Your style is the most expressive view of yourself Make your fashion never go out of style. Visit out store for more information.</p>
+                 <p className="product_sub_content">Your style is the most expressive view of yourself Make your fashion never go out of style. This is the product description that will show case the product.</p>
                  <div className ="product_visit-section">
                      <form className=" col s6 l6 xl6 value">
                          <button  className="product_visit-link"  onClick={(e)=>buttonHandler(e,1)}><i className="material-icons">arrow_drop_up</i></button>

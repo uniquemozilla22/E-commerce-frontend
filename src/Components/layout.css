@@ -1,0 +1,59 @@
+.toasts_container{
+    position:absolute;
+    position:fixed;
+    bottom:10px;
+    left:10px;
+    max-width: 400px;
+    ;
+}
+
+
+.toasts_container .toasts{
+    border-radius: 20px;
+    border: 1px solid green;
+    background:rgb(226, 226, 226);
+    max-width:100%;
+    animation-name:toasts_animation;
+    animation-duration:4s;
+    max-width: 300px;
+    padding:10px;
+    color:rgb(102, 102, 102);
+    transition:0.3s;
+    cursor:pointer;;
+    display:none
+
+}
+
+.toasts_container .toasts .button{
+    background:transparent;
+    margin: 15px;
+}
+
+.toasts_container .toasts:hover {
+    background:rgb(255, 255, 255);
+    max-width:400px;
+}
+
+.toasts_container .toasts:hover button {
+
+    color:rgb(131, 42, 42);
+}
+
+
+@keyframes toasts_animation{
+    0% {
+        left:-100px;
+        opacity:0
+        
+    }
+    50%{
+
+        left:10px;
+        opacity:1;
+    }
+  100%{
+      display: none;
+    opacity:0
+
+    }
+}

@@ -1,51 +1,35 @@
 import React from 'react'
 import './Carousel.css'
 import {Link} from 'react-router-dom'
+import Banner from '../../../Assets/f49b1827466f1d57b9e9b3cebdf955ae.png'
 
 const Carousel = () => {
     return (
 
         <section id="display-page ">
-            <div className="row container">
-            <div className="col s12 hide-on-med-and-up ">
-                <div className="content">
-                     <p className="title">The right choice for your style.  </p>
-                     <p className="sub_content">Your style is the most expressive view of yourself Make your fashion never go out of style. Visit out store for more information.</p>
-                     <div className ="visit-section">
-                     <Link to ="/shop"><div className="visit-link">
-                     Visit Site
-                    </div></Link>
-                    <Link to ="/shop"><div className="visit-link">
-                     Visit Shop
-                    </div></Link>
-                     </div>
-                     
-                     
-                </div>
-            </div>
-            <div className="col s6 hide-on-med-and-down">
-                <div className="content">
-                     <p className="title">The right choice for your style.  </p>
-                     <p className="sub_content">Your style is the most expressive view of yourself Make your fashion never go out of style. Visit out store for more information.</p>
-                     <div className ="visit-section">
-                     <Link to ="/shop"><div className="visit-link">
-                     Visit Site
-                    </div></Link>
-                    <Link to ="/shop"><div className="visit-link">
-                     Visit Shop
-                    </div></Link>
-                     </div>
-                     
-                     
-                </div>
-            </div>
-                <div className="col s6  hide-on-med-and-down">
-                    <div className="image-content">
-                    <img className="img1" src={"https://i.pinimg.com/originals/f5/a1/29/f5a129faa7b246ba9fcda5234975e3d0.jpg"} alt="Display Picture"/>
-                    <img className="img2" src={"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxfeToFFhX6NRMdCgj64TuldPpE-pBiYiGIQ&usqp=CAU"} alt="Display Picture"/>
-                    <img className="img3" src={"https://www.urby.in/blog/wp-content/uploads/2017/09/streetfashion-e1505890764149.jpg"} alt="Display Picture"/>
+            <div className="banner">
+                <div className="row">
+                    <div className =" banner-image ">
+                        <img src={Banner} alt="Video"/>
                     </div>
                 </div>
+                <div className="row">
+                    <div className ="center Fexal_banner-content ">
+                        <div className="Content">
+                            <div className="fexal_title">
+                                <h3>The right choice for your style</h3>
+                            </div>
+                            <div className=" center fexal_content ">
+                                <p>When your clothing partner has the best selection the more you can show and express yourselves to the outerworld. Give it a go.</p>
+                            </div>
+                            <div className="fexal_banner_link center">
+                            <Link to="/shop" > <div className="btn_visit">Visit Shop</div></Link>
+                            <Link to="" >   <div className="btn_watch">Watch Demo</div></Link>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+
             </div>
         </section>
     )

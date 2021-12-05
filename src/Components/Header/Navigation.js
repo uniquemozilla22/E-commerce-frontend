@@ -5,8 +5,8 @@ import './Navigation.css'
 const Navigation = () => {
     return (
         <>
-            <nav class="nav-extended white black-text">
-                <TopBar title={"Fexal"} sideItems ={"Google Login"}/>
+            <nav class="nav-extended">
+                <TopBar title={"FeXal"} sideItems ={"Google Login"}/>
             </nav>
         </>
 

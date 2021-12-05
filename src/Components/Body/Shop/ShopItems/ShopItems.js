@@ -9,7 +9,7 @@ const ShopItems = () => {
             <div class="card">
               <div class="card-image waves-effect waves-block waves-light">
                 <img class="activator" src={productImage} alt="Product"/>
-              </div>
+            </div>
               <div class="card-content">
                 <span class="card-title activator grey-text text-darken-4"><Link to="../shop/product">Shirt Title </Link><i class="material-icons right">bookmark_border</i><Link to="../cart"><i class="material-icons right">add_shopping_cart</i></Link></span>
                 <span className="price"><i class="material-icons">attach_money</i><Link href="#">{"99"}</Link></span>

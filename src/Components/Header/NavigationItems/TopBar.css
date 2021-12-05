@@ -1,3 +1,57 @@
-ul i {
-    font-size: 40px !important;
+
+.fexal_topbar{
+    background-color:rgba(0, 0, 0, 0);
+    font-size : 1em;
+    width : 100%;
 }
+
+.fexal_topbar .logo{
+    padding:10px;
+}
+
+.fexal_topbar .navigation-links{
+    padding:10px 0;
+
+}
+
+.fexal_topbar .navigation-links a:hover{
+    font-weight:bold;
+}
+
+.fexal_topbar .navigation-links li{
+    width : 100px;
+
+}
+
+.fexal_topbar .topbar_wrapper{
+    display: flex;
+    justify-content : space-between;
+}
+
+.fexal_topbar .content-links {
+    float: left;
+    padding:10px 0;
+}
+
+.fexal_topbar .content-links li{
+    height:40px;
+}
+
+.fexal_topbar .content-links img{
+    width:20px;
+}
+
+.fexal_topbar .content-links .background-grey{
+    background-color:#333232;
+
+}
+
+.fexal_topbar .content-links .wishlist-images .alert{
+    width:10px;
+}
+
+.fexal_topbar .content-links .cart img{
+    width:45px;
+    margin: 20% 0;
+}
+
