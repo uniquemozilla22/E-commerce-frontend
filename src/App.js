@@ -1,14 +1,14 @@
-import React from 'react'
-import Layout from './Components/layout'
-import Body from './Components/Body'
+import React from "react";
+import Layout from "./Components/layout";
+import Body from "./Components/Body";
 const App = () => {
   return (
     <>
-    <Layout>
-      <Body/>
-    </Layout>
+      <Layout>
+        <Body />
+      </Layout>
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;
